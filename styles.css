@@ -1,0 +1,112 @@
+:root{
+    --White: hsl(0, 100%, 100%);
+    --Purple-100: hsl(275, 100%, 97%);
+    --Purple-600: hsl(292, 16%, 49%);
+    --Purple-950: hsl(292, 42%, 14%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--Purple-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    background-color: var(--Purple-100);
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: 0;
+}
+
+section{
+    max-width: 40rem;
+    background: var(--White);
+    position: relative;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    margin: 0 1rem;
+}
+
+span{
+    font-weight: 600;
+    color: var(--Purple-950);
+    padding: 1rem 0;
+}
+
+.faqsection svg{
+    width: 30px;
+    height: 31px;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.acontainer{
+    color: var(--Purple-600);
+    line-height: 1.4rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s, margin-bottom 0.2s;
+}
+
+.marg-bot{
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    font-size: 3.3rem;
+    color: var(--Purple-950);
+    margin-bottom: 2rem;
+}
+
+.vertical-align{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+h1::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    background-image: url("./assets/images/icon-star.svg");
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+}
+
+span:hover{
+    cursor: pointer;
+    color: #AD28EB;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: var(--Purple-100);
+}
+
+@media screen and (max-width: 375px){
+    .background{
+        background-image: url("./assets/images/background-pattern-mobile.svg");
+    }
+}
