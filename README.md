@@ -14,7 +14,7 @@ FAQ Accordion created for one of the challengeds at FrontendMentor. The task was
 
 1. Came up with a neat trick to make a fixed background that doesn't resize as the viewport stretchet. Simply put, a div that contains that border image is required, positioned as a sibling of the main content, and give it a fixed heigth (preferably the same a the image) and a width of 100%, and an absolute position, with top set to 0. I did not like how it was stretching the background when put on the body element, so I had to look up some ideas on how to make it not stretch. I still used the mobile sized background despite this, as the motif was not visible in its entirety if I kept it unchanged.
 2. I've tried to use top/left followed by translate to center the container of the content to the center. Issues where showing up when viewport was streatched to a mobile size, where it looked like the right side's margin did not respond, but the left side was responding. Apparently, translate did not behave well, so I had to give up and go with flexbox.
-3. <hr> is a much better option to make a customizable line, rather than making a ::before or ::after or div that would look like a line.
+3. hr is a much better option to make a customizable line, rather than making a ::before or ::after or div that would look like a line.
 4. First time using Javascript to give interactivity to a document. I had to look up about the elements to be used for doing this. I knew about querySelector, but not about querySelectorAll and forEach. Did not know about nextElementSibling, to target the immediate sibling of an element, or the setAttribute. I guess, this project was helpfull to give me an insight about how interactivity works
 
 # What needs work
